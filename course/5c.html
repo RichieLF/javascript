@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log (`the total is ${bill}£`)">Bill</button>
+    <button onclick="bill += 5; console.log (`Coffee price is ${bill}`)">Coffee</button>
+    <button onclick="bill += (15 * 10) / 100; console.log (`Bagel price is ${bill}`)">Bagel</button>
+    <button onclick="bill += 9; console.log (`Soup price is ${bill}`)">Soup</button>
+    <button onclick="bill += (bill * 10) / 100; console.log (`The tax price is ${bill}`)">10% Tax</button>
+    <button onclick="bill = 0; console.log (bill)">Reset</button>
+    <script>
+        let bill = 0;
+    </script>
+</body>
+</html>
